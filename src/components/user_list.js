@@ -7,7 +7,9 @@ class UserList extends Component {
     this.props.fetchUsers();
   }
 
+
   renderUser(user) {
+    const users = this.props.users;
     return (
       <div className="card card-block">
         <h4 className="card-title">{user.name}</h4>
